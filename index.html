@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="UTF-8">
+    <title>Banner Generator</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+    //$ = want to use jQuery
+    
+    // 2/27/2017
+    // Input (HTML) --> https://www.w3schools.com/html/html_form_input_types.asp
+    // Customize Button (CSS3) --> https://www.w3schools.com/css/css3_buttons.asp
+    
+        $(function(){
+            $('h1').click(function(){
+              var name = prompt("What is your name?");
+              // var colors = prompt("What two colors do you want?");
+              // var title = prompt("What title would you give to your banner?");
+              $('submit').click(function(){
+                alert("Thanks for telling me! (OuO)/")  
+              })
+            })
+          
+        });
+    </script>
+  </head>
+  <body>
+    <form> 
+      First Name: <br>
+      <input type="text" name="firstname" value=""> <br>
+      Last Name: <br>
+      <input type="text" name="lastname" value=""> <br>
+      
+      <input type="submit" value="Submit">
+    </form>
+              
+    <h1>Hello there! Click on me!</h1>
+    
+  </body>
+</html>
