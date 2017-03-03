@@ -13,28 +13,47 @@
     // Notify when names are submitted (jQuery) --> https://www.w3schools.com/jquery/event_submit.asp
     
         $(function(){
-            $('h1').click(function(){
-              var name = prompt("What is your name?");
-              // var colors = prompt("What two colors do you want?");
-              // var title = prompt("What title would you give to your banner?");
-            })
-            $('form').submit(function(){
-                alert("Thanks for telling me! (OuO)/")  
-            })
+            $('#box').html($('#text').val());
+           
         });
+        
     </script>
+    
+    <style>
+      #box {
+        width: 500px;
+        height: 200px;
+        border: 2px;
+        background-color: white;
+      }
+    </style>
+    
   </head>
   <body>
-    <h1>Hello there! Click on me!</h1>
     
     <form> 
       First Name: <br>
-      <input type="text" name="firstname" value=""> <br> <br>
+      <input type="text" id="firstname"> <br><br>
       Last Name: <br>
-      <input type="text" name="lastname" value=""> <br>
+      <input type="text" id="lastname" value=""> <br><br>
       
-      <input type="submit" value="Submit">
+      Title of Banner: <br>
+      <input type="text" id="lastname" value=""> <br><br>
+      
+      Choose Font:<br>
+      
+      Color of background: 
+      <input type="color" name="colorpicker" id=background-color> <br><br>
+      
+      Color of font: 
+      <input type="color" name="colorpicker" id="font-color"> <br><br>
+    
+      <input type="submit" value="Submit"> <br><br>
     </form>
+    
+     <h1 id="box"></h1>
+      
+    </div>
     
   </body>
 </html>
