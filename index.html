@@ -15,13 +15,15 @@
         $(function(){
             $('button').click(function(){
                 //$('#box').html($('#firstname').val());
-                var firstName = $('#firstname').val();
-                var lastName = $('#lastname').val();
-                var backgroundColor = $('#background-color').val();
+                var firstName = $('#firstname').html();
+                var lastName = $('#lastname').html();
+                var backgroundColor = $('#background-color').html();
                 var fontColor = $('#font-color').val();
                 
-                $('#firstname').html(firstName);
-                $('#lastname').html(lastName);
+                $('firstName').html('#firstname');
+                $('lastName').html('#lastName');
+                $('backgroundColor').css('#background-color');
+                $('fontColor').css('#font-color');
             });
         });
     </script>
