@@ -14,11 +14,16 @@
     
         $(function(){
             $('button').click(function(){
-                $('#box').html($('#firstname').val());
+                //$('#box').html($('#firstname').val());
+                var firstName = $('#firstname').val();
+                var lastName = $('#lastname').val();
+                var backgroundColor = $('#background-color').val();
+                var fontColor = $('#font-color').val();
+                
+                $('#firstname').html(firstName);
+                $('#lastname').html(lastName);
             });
-           
         });
-        
     </script>
     
     <style>
