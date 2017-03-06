@@ -13,7 +13,9 @@
     // Notify when names are submitted (jQuery) --> https://www.w3schools.com/jquery/event_submit.asp
     
         $(function(){
-            $('#box').html($('#text').val());
+            $('button').click(function(){
+                $('#box').html($('#text').val());
+            });
            
         });
         
@@ -33,14 +35,18 @@
     
     <form> 
       First Name: <br>
-      <input type="text" id="firstname"> <br><br>
+      <input type="text" id="firstname"> </input> <br><br>
       Last Name: <br>
-      <input type="text" id="lastname" value=""> <br><br>
+      <input type="text" id="lastname"> <br><br>
       
       Title of Banner: <br>
-      <input type="text" id="lastname" value=""> <br><br>
+      <input type="text" id="lastname"> <br><br>
       
       Choose Font:<br>
+      <input type="radio" id="">Bold font<br>
+      <input type="radio" id="">Italic font<br>
+      <input type="radio" id="">Cursive/Script font<br>
+      <input type="radio" id="">Normal font<br><br>
       
       Color of background: 
       <input type="color" name="colorpicker" id=background-color> <br><br>
@@ -48,7 +54,7 @@
       Color of font: 
       <input type="color" name="colorpicker" id="font-color"> <br><br>
     
-      <input type="submit" value="Submit"> <br><br>
+      <input type="button" value="Submit"> <br><br>
     </form>
     
      <h1 id="box"></h1>
